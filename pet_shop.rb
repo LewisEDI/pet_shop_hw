@@ -42,7 +42,7 @@ end
 
 def find_pet_by_name(pet_shop, name)
   for pet in pet_shop[:pets]
-    return pet if name == pet[:name]
+      return pet if name == pet[:name]
   end
 
   return()
@@ -51,7 +51,7 @@ end
 def remove_pet_by_name(pet_shop, pet_name)
     for pet in pet_shop[:pets]
     pet_shop[:pets].delete(pet) if pet_name == pet[:name]
-end
+    end
 end
 
 
@@ -75,7 +75,7 @@ def customer_pet_count(customer_index)
     count = 0
     for pet in customer_index[:pets]
     count += 1
-  end
+    end
   return count
 end
 
